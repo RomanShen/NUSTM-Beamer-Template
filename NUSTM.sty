@@ -234,3 +234,14 @@ overlay={
 % \renewcommand\tablename{表}
 % \renewcommand\refname{参考文献}
 
+
+%%%%%%%%%
+%%%%%%%%% Footnote settings
+%%%%%%%%%
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
