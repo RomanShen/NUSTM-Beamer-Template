@@ -1,0 +1,236 @@
+% Required packages
+
+\RequirePackage{bookmark}
+\RequirePackage{tikz}
+% \RequirePackage{pgfplots}
+\RequirePackage{array}
+\RequirePackage{colortbl}
+\RequirePackage{booktabs}
+% \RequirePackage{pgfplotstable}
+\RequirePackage{tcolorbox}
+\RequirePackage{multicol}
+
+\usetikzlibrary{patterns.meta}
+\usetikzlibrary{fadings}
+
+
+%%%%%%%%%
+%%%%%%%%% Color scheme settings
+%%%%%%%%%
+
+\definecolor{cprimary}{HTML}{004098}        %problue 
+\definecolor{csecondary}{HTML}{298626}      %lightgreen
+\definecolor{ctertiary}{HTML}{004D4B}       %lightgray
+\definecolor{cquanternary}{HTML}{FFFFFF}    %white  
+
+\usecolortheme{orchid}
+
+% Color scheme for outer elements: use background colors
+\usecolortheme{whale}
+
+% Customed color scheme
+
+\setbeamercolor{palette primary}{bg=cprimary,fg=white}
+\setbeamercolor{palette secondary}{bg=csecondary,fg=white}
+\setbeamercolor{palette tertiary}{bg=ctertiary,fg=white}
+\setbeamercolor{palette quanternary}{bg=,fg=cquanternary}
+\setbeamercolor{structure}{fg=cprimary}
+
+\setbeamercolor{author in head/foot}{bg=black,fg=white}
+\setbeamercolor{section in head/foot}{fg=white,bg=black}
+\setbeamercolor{title in head/foot}{bg=cprimary,fg=white}
+\setbeamercolor{subsection in head/foot}{fg=white,bg=cprimary}
+
+\setbeamercolor{title}{parent={palette primary}}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{logo}{use={palette primary},bg=,fg=palette primary.fg}
+\setbeamercolor*{block title}{parent=structure}
+\setbeamercolor{subtitle}{parent={palette secondary}}
+\setbeamercolor{normal text}{fg=black,bg=black!40}
+\setbeamercolor{titlelike}{parent={palette primary}}
+
+\setbeamercolor{block title}{fg=white,bg=cprimary!90}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=csecondary}
+\setbeamercolor{block title example}{use=example text,fg=cquanternary,bg=ctertiary}
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!30}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!30}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!30}
+
+\setbeamercolor{section title}{parent={palette secondary}}
+\setbeamercolor{subsection title}{parent={palette tertiary}}
+
+\setbeamercolor{frametitle}{parent=subsection in head/foot}
+\setbeamercolor{frametitle right}{parent=section in head/foot}
+
+\pgfdeclarehorizontalshading[frametitle.bg,frametitle right.bg]{beamer@frametitleshade}{\paperheight}{%
+  color(0pt)=(frametitle.bg);
+  color(\paperwidth)=(frametitle right.bg)}
+
+\AtBeginDocument{
+  \pgfdeclareverticalshading{beamer@topshade}{\paperwidth}{%
+    color(0pt)=(bg);
+    color(4pt)=(black!50!bg)}
+}
+
+
+%%%%%%%%%
+%%%%%%%%% Outer theme settings
+%%%%%%%%%
+
+\useoutertheme{split}
+
+% Footline: AUTHOR | TITLE | DATE FRAMENUMBER
+
+\defbeamertemplate*{footline}{nustm theme}{%
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortdate
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.435\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+   \begin{beamercolorbox}[wd=0.065\paperwidth,ht=2.25ex,dp=1ex,right]{title in head/foot}%
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\defbeamertemplate*{headline}{nustm theme}{%
+  \leavevmode%
+  \@tempdimb=6.4375ex%
+    %\multiply\@tempdimb by\beamer@sectionmax%
+    % \pgfdeclareimage[height=.85\@tempdimb]{logo}{source/nustm_logo.png}%
+    \pgfdeclareimage[height=.9\@tempdimb]{title_logo}{source/nustm_title.png}%
+%   \logo{\pgfuseimage{logo}}%
+  \ifdim\@tempdimb>0pt%
+    \advance\@tempdimb by 1.125ex%
+    \begin{beamercolorbox}[wd=.8\paperwidth,ht=\@tempdimb]{section in head/foot}%
+      \vbox to\@tempdimb{\vfil\insertsectionnavigationhorizontal{.5\textwidth}{\hskip0pt plus1filll}{}\vfil}%
+    \end{beamercolorbox}%
+    %% \begin{beamercolorbox}[wd=.4\paperwidth,ht=\@tempdimb,center]{subsection in head/foot}%
+    %%   \vbox to\@tempdimb{\vfil\textbf{\footnotesize\insertshortinstitute~~}\vfil}%
+    %% \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.2\paperwidth,ht=\@tempdimb,center]{subsection in head/foot}%
+      \vbox to\@tempdimb{\vfil\pgfuseimage{title_logo}\vfil}%
+    \end{beamercolorbox}%
+    % \begin{beamercolorbox}[wd=.065\paperwidth,ht=\@tempdimb,center]{subsection in head/foot}%
+    %   \vbox to\@tempdimb{\vfil\insertlogo\vfil\vfil}%
+    % \end{beamercolorbox}%
+  \fi%
+}
+
+\defbeamertemplate*{frametitle}{nustm theme}{%
+  \nointerlineskip%
+  \hbox{\leavevmode
+    \advance\beamer@leftmargin by -12bp%
+    \advance\beamer@rightmargin by -12bp %
+    \beamer@tempdim=\textwidth%
+    \advance\beamer@tempdim by \beamer@leftmargin%
+    \advance\beamer@tempdim by \beamer@rightmargin%
+    \hskip-\Gm@lmargin\hbox{%
+      \setbox\beamer@tempbox=\hbox{\begin{minipage}[b]{\paperwidth}%
+          \vbox{}\vskip-.75ex%
+          \leftskip0.3cm%
+          \rightskip= 0pt plus1fil \leavevmode
+          \insertframetitle%
+          \ifx\insertframesubtitle\@empty%
+            \strut\par%
+          \else
+            \par{\usebeamerfont*{framesubtitle}{\usebeamercolor[bg]{framesubtitle}\insertframesubtitle}\strut\par}%
+          \fi%
+          \nointerlineskip
+          \vbox{}%
+          \end{minipage}}%
+      \beamer@tempdim=\ht\beamer@tempbox%
+      \advance\beamer@tempdim by 2pt%
+      \begin{pgfpicture}{0mm}{0pt}{\paperwidth}{\beamer@tempdim}
+        \usebeamercolor{frametitle right}
+        \pgfpathrectangle{\pgfpointorigin}{\pgfpoint{\paperwidth}{\beamer@tempdim}}
+        \pgfusepath{clip}
+        \pgftext[left,base]{\pgfuseshading{beamer@frametitleshade}}
+      \end{pgfpicture}
+      \hskip-\paperwidth%
+      \box\beamer@tempbox%
+    }%
+    \hskip-\Gm@rmargin%
+  }%
+}
+
+
+%%%%%%%%%
+%%%%%%%%% Inner theme settings
+%%%%%%%%%
+
+\useinnertheme{rounded}
+
+% Itemize items: default (triangle), circle, square, ball
+\setbeamertemplate{itemize items}[circle]
+
+% Enumerate items: default, circle, square, ball
+\setbeamertemplate{enumerate items}[circle]
+
+% Outline: default, sections numbered, subsections numbered, circle, square, ball, ball unnumbered
+\setbeamertemplate{sections/subsections in toc}[circle]
+
+% General blocks
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+% Title page
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true]
+
+% Part page
+\setbeamertemplate{part page}[default][colsep=-4bp,rounded=true]
+
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\scriptsize}
+
+% User defined blocks
+
+\tcbuselibrary{skins}
+\tcbuselibrary{listingsutf8}
+\lstset{
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{cprimary},%
+  stringstyle=\color{csecondary},%
+  commentstyle=\color{ctertiary!80!gray},%
+  columns=flexible,
+  extendedchars=false,
+  showstringspaces=false,
+  showspaces=false,
+  breaklines
+}
+\newtcblisting{codeblock}[2]{listing only, 
+listing engine=listings,
+listing options={
+  language=#1,%
+  numbers=left,
+  numberstyle=\color{cprimary!80}\ttfamily\scriptsize,
+  numbersep=5pt,
+},
+enhanced,
+sharp corners,
+top=0mm,
+bottom=0mm,
+title=#2,
+colback=cprimary!5,
+colframe=cprimary!80,
+overlay={
+    \begin{tcbclipinterior}\fill[cprimary!20]%
+        (frame.south west) rectangle ([xshift=5mm]frame.north west);
+    \end{tcbclipinterior}
+}
+}
+
+
+%%%%%%%%%
+%%%%%%%%% EN/CN settings
+%%%%%%%%%
+% \renewcommand\figurename{图}
+% \renewcommand\tablename{表}
+% \renewcommand\refname{参考文献}
+
