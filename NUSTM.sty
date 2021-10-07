@@ -2,11 +2,9 @@
 
 \RequirePackage{bookmark}
 \RequirePackage{tikz}
-% \RequirePackage{pgfplots}
 \RequirePackage{array}
 \RequirePackage{colortbl}
 \RequirePackage{booktabs}
-% \RequirePackage{pgfplotstable}
 \RequirePackage{tcolorbox}
 \RequirePackage{multicol}
 
@@ -228,14 +226,6 @@ overlay={
 
 
 %%%%%%%%%
-%%%%%%%%% EN/CN settings
-%%%%%%%%%
-% \renewcommand\figurename{图}
-% \renewcommand\tablename{表}
-% \renewcommand\refname{参考文献}
-
-
-%%%%%%%%%
 %%%%%%%%% Footnote settings
 %%%%%%%%%
 \newcommand\blfootnote[1]{%
@@ -244,4 +234,46 @@ overlay={
   \addtocounter{footnote}{-1}%
   \endgroup
 }
+\renewcommand{\footnotesize}{\fontsize{5pt}{6pt}\selectfont}
 
+%%%%%%%%%
+%%%%%%%%% EN/CN settings
+%%%%%%%%%
+% uncomment following lines to use cn ver.
+
+% \renewcommand\figurename{图}
+% \renewcommand\tablename{表}
+% \renewcommand\refname{参考文献}
+% \usepackage[UTF8]{ctex}    % CN version
+
+% chinese support
+% \usepackage{fontspec}
+% \usepackage{xeCJK}
+% \setCJKmainfont[
+%     AutoFakeBold=true
+% ]{FandolFang-Regular}
+
+% \setCJKsansfont[
+%     BoldFont=FandolSong-Bold,
+%     ItalicFont=FandolKai-Regular
+% ]{FandolSong-Regular}
+
+% \setCJKmonofont[
+%     BoldFont=FandolHei-Bold
+% ]{FandolHei-Regular}
+
+% \newCJKfontfamily\song[
+%     BoldFont=FandolSong-Bold
+% ]{FandolSong-Regular}
+
+% \newCJKfontfamily\hei[
+%     BoldFont=FandolHei-Bold
+% ]{FandolHei-Regular}
+
+% \newCJKfontfamily\kai[
+%     AutoFakeBold=true
+% ]{FandolKai-Regular}
+
+% \newCJKfontfamily\fang[
+%     AutoFakeBold=true
+% ]{FandolFang-Regular}

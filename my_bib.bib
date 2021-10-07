@@ -1,13 +1,573 @@
-@inproceedings{Liao0ZNC18,
-  author    = {Lizi Liao and
-               Xiangnan He and
-               Bo Zhao and
-               Chong{-}Wah Ngo and
-               Tat{-}Seng Chua},
-  title     = {Interpretable Multimodal Retrieval for Fashion Products},
-  booktitle = {2018 {ACM} Multimedia Conference on Multimedia Conference, {MM} 2018,
-               Seoul, Republic of Korea, October 22-26, 2018},
-  pages     = {1571--1579},
-  year      = {2018},
-  url       = {https://doi.org/10.1145/3240508.3240646},
+
+@inproceedings{lu_neurologic_2021,
+	address = {Online},
+	title = {{NeuroLogic} {Decoding}: ({Un})supervised {Neural} {Text} {Generation} with {Predicate} {Logic} {Constraints}},
+	shorttitle = {{NeuroLogic} {Decoding}},
+	url = {https://aclanthology.org/2021.naacl-main.339},
+	doi = {10.18653/v1/2021.naacl-main.339},
+	abstract = {Conditional text generation often requires lexical constraints, i.e., which words should or shouldn't be included in the output text. While the dominant recipe for conditional text generation has been large-scale pretrained language models that are finetuned on the task-specific training data, such models do not learn to follow the underlying constraints reliably, even when supervised with large amounts of task-specific examples. We propose NeuroLogic Decoding, a simple yet effective algorithm that enables neural language models – supervised or not – to generate fluent text while satisfying complex lexical constraints. Our approach is powerful yet efficient. It handles any set of lexical constraints that is expressible under predicate logic, while its asymptotic runtime is equivalent to conventional beam search. Empirical results on four benchmarks show that NeuroLogic Decoding outperforms previous approaches, including algorithms that handle a subset of our constraints. Moreover, we find that unsupervised models with NeuroLogic Decoding often outperform supervised models with conventional decoding, even when the latter is based on considerably larger networks. Our results suggest the limit of large-scale neural networks for fine-grained controllable generation and the promise of inference-time algorithms.},
+	urldate = {2021-07-16},
+	booktitle = {Proceedings of the 2021 {Conference} of the {North} {American} {Chapter} of the {Association} for {Computational} {Linguistics}: {Human} {Language} {Technologies}},
+	publisher = {Association for Computational Linguistics},
+	author = {Lu, Ximing and West, Peter and Zellers, Rowan and Le Bras, Ronan and Bhagavatula, Chandra and Choi, Yejin},
+	month = jun,
+	year = {2021},
+	keywords = {Read, \_Eventic Graph Completion, \$COMMONGEN, \$Recipe1M+},
+	pages = {4288--4299},
+	file = {Lu et al_2021_NeuroLogic Decoding.pdf:/home/shen/Nutstore Files/Zotero/Eventic Graph/Lu et al_2021_NeuroLogic Decoding.pdf:application/pdf},
+}
+
+@inproceedings{zhou_temporal_2021,
+	address = {Online},
+	title = {Temporal {Reasoning} on {Implicit} {Events} from {Distant} {Supervision}},
+	url = {https://aclanthology.org/2021.naacl-main.107},
+	doi = {10.18653/v1/2021.naacl-main.107},
+	abstract = {We propose TRACIE, a novel temporal reasoning dataset that evaluates the degree to which systems understand implicit events—events that are not mentioned explicitly in natural language text but can be inferred from it. This introduces a new challenge in temporal reasoning research, where prior work has focused on explicitly mentioned events. Human readers can infer implicit events via commonsense reasoning, resulting in a more comprehensive understanding of the situation and, consequently, better reasoning about time. We find, however, that state-of-the-art models struggle when predicting temporal relationships between implicit and explicit events. To address this, we propose a neuro-symbolic temporal reasoning model, SymTime, which exploits distant supervision signals from large-scale text and uses temporal rules to combine start times and durations to infer end times. SymTime outperforms strong baseline systems on TRACIE by 5\%, and by 11\% in a zero prior knowledge training setting. Our approach also generalizes to other temporal reasoning tasks, as evidenced by a gain of 1\%-9\% on MATRES, an explicit event benchmark.},
+	urldate = {2021-07-26},
+	booktitle = {Proceedings of the 2021 {Conference} of the {North} {American} {Chapter} of the {Association} for {Computational} {Linguistics}: {Human} {Language} {Technologies}},
+	publisher = {Association for Computational Linguistics},
+	author = {Zhou, Ben and Richardson, Kyle and Ning, Qiang and Khot, Tushar and Sabharwal, Ashish and Roth, Dan},
+	month = jun,
+	year = {2021},
+	keywords = {Read, \$ROCStories, \$TRACIE, \_Temporal Relation, \$MATRES},
+	pages = {1361--1371},
+	file = {Zhou et al_2021_Temporal Reasoning on Implicit Events from Distant Supervision.pdf:/home/shen/Nutstore Files/Zotero/Eventic Graph/Zhou et al_2021_Temporal Reasoning on Implicit Events from Distant Supervision.pdf:application/pdf},
+}
+
+@article{hwang_comet-_2021,
+	title = {({Comet}-) {Atomic} 2020: {On} {Symbolic} and {Neural} {Commonsense} {Knowledge} {Graphs}},
+	volume = {35},
+	copyright = {Copyright (c) 2021 Association for the Advancement of Artificial Intelligence},
+	issn = {2374-3468},
+	shorttitle = {({Comet}-) {Atomic} 2020},
+	url = {https://ojs.aaai.org/index.php/AAAI/article/view/16792},
+	language = {en},
+	number = {7},
+	urldate = {2021-08-01},
+	journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+	author = {Hwang, Jena D. and Bhagavatula, Chandra and Bras, Ronan Le and Da, Jeff and Sakaguchi, Keisuke and Bosselut, Antoine and Choi, Yejin},
+	month = may,
+	year = {2021},
+	note = {Number: 7},
+	keywords = {Read, *ConceptNet, *ATOMIC, Generation, \_Eventic Graph Construction, *ATOMIC2020, *TRANSOMCS},
+	pages = {6384--6392},
+	file = {Hwang et al_2021_(Comet-) Atomic 2020.pdf:/home/shen/Nutstore Files/Zotero/Eventic Graph/Hwang et al_2021_(Comet-) Atomic 2020.pdf:application/pdf},
+}
+
+@inproceedings{lin-etal-2020-commongen,
+    title = "{C}ommon{G}en: A Constrained Text Generation Challenge for Generative Commonsense Reasoning",
+    author = "Lin, Bill Yuchen  and
+      Zhou, Wangchunshu  and
+      Shen, Ming  and
+      Zhou, Pei  and
+      Bhagavatula, Chandra  and
+      Choi, Yejin  and
+      Ren, Xiang",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2020",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.findings-emnlp.165",
+    doi = "10.18653/v1/2020.findings-emnlp.165",
+    pages = "1823--1840",
+    abstract = "Recently, large-scale pre-trained language models have demonstrated impressive performance on several commonsense-reasoning benchmark datasets. However, building machines with commonsense to compose realistically plausible sentences remains challenging. In this paper, we present a constrained text generation task, CommonGen associated with a benchmark dataset, to explicitly test machines for the ability of generative commonsense reasoning. Given a set of common concepts (e.g., dog, frisbee, catch, throw); the task is to generate a coherent sentence describing an everyday scenario using these concepts (e.g., {``}a man throws a frisbee and his dog catches it{''}). The CommonGen task is challenging because it inherently requires 1) relational reasoning with background commonsense knowledge and 2) compositional generalization ability to work on unseen concept combinations. Our dataset, constructed through a combination of crowdsourced and existing caption corpora, consists of 77k commonsense descriptions over 35k unique concept-sets. Experiments show that there is a large gap between state-of-the-art text generation models (e.g., T5) and human performance (31.6{\%} v.s. 63.5{\%} in SPICE metric). Furthermore, we demonstrate that the learned generative commonsense reasoning capability can be transferred to improve downstream tasks such as CommonsenseQA (76.9{\%} to 78.4 in dev accuracy) by generating additional context.",
+}
+
+@inproceedings{KKSR18,
+  author = {Daniel Khashabi and Tushar Khot and Ashish Sabharwal and Dan Roth},
+  title = {{Question Answering as Global Reasoning over Semantic Abstractions}},
+  booktitle = "AAAI",
+  year = {2018},
+}
+
+@book{Aho:72,
+    author  = {Alfred V. Aho and Jeffrey D. Ullman},
+    title   = {The Theory of Parsing, Translation and Compiling},
+    year    = "1972",
+    volume  = "1",
+    publisher = {Prentice-Hall},
+    address = {Englewood Cliffs, NJ}
+}
+
+@book{APA:83,
+    author  = {{American Psychological Association}},
+    title   = {Publications Manual},
+    year    = "1983",
+   publisher = {American Psychological Association},
+   address = {Washington, DC}
+}
+
+@article{Chandra:81,
+	author = {Ashok K. Chandra and Dexter C. Kozen and Larry J. Stockmeyer},
+	year = "1981",
+	title = {Alternation},
+	journal = JACM,
+	volume = "28",
+	number = "1",
+	pages = "114--133",
+	doi = "10.1145/322234.322243",
+}
+
+@article{raffel2020exploring,
+  title={{Exploring the Limits of Transfer Learning with a Unified Text-to-text Transformer}},
+  author={Raffel, Colin and Shazeer, Noam and Roberts, Adam and Lee, Katherine and Narang, Sharan and Matena, Michael and Zhou, Yanqi and Li, Wei and Liu, Peter J},
+  journal={JMLR},
+  volume=21,
+  number=140,
+  pages={1-67},
+  year={2020},
+}
+
+@inproceedings{mostafazadeh2016corpus,
+  title={A {C}orpus and {E}valuation {F}ramework for {D}eeper {U}nderstanding of {C}ommonsense {S}tories},
+  author={Mostafazadeh, Nasrin and Chambers, Nathanael and He, Xiaodong and Parikh, Devi and Batra, Dhruv and Vanderwende, Lucy and Kohli, Pushmeet and Allen, James},
+  booktitle={NAACL},
+  year={2016},
+}
+
+@inproceedings{reimers2016temporal,
+  title={{Temporal Anchoring of Events for the Timebank corpus}},
+  author={Reimers, Nils and Dehghani, Nazanin and Gurevych, Iryna},
+  booktitle={ACL},
+  year={2016},
+}
+
+@inproceedings{NingWuRo18,
+    author = {Qiang Ning and Hao Wu and Dan Roth},
+    title = {A Multi-Axis Annotation Scheme for Event Temporal Relations},
+    booktitle = {ACL},
+    month = {7},
+    year = {2018},
+}
+
+@article{bhagavatula2019abductive,
+  title={{Abductive Commonsense Reasoning}},
+  author={Bhagavatula, Chandra and Bras, Ronan Le and Malaviya, Chaitanya and Sakaguchi, Keisuke and Holtzman, Ari and Rashkin, Hannah and Downey, Doug and Yih, Scott Wen-tau and Choi, Yejin},
+  journal={In ICLR},
+  year={2020}
+}
+
+@inproceedings{ammanabrolu2020automated,
+  title={{Automated Storytelling via Causal, Commonsense Plot Ordering}},
+  author={Ammanabrolu, Prithviraj and Cheung, Wesley and Broniec, William and Riedl, Mark O},
+  booktitle={AAAI},
+  year={2021}
+}
+
+@article{gerevini1995efficient,
+  title={Efficient algorithms for qualitative reasoning about time},
+  author={Gerevini, Alfonso and Schubert, Lenhart},
+  journal={Artificial intelligence},
+  volume={74},
+  number={2},
+  pages={207--248},
+  year={1995},
+  publisher={Elsevier}
+}
+
+@inproceedings{tandon2020dataset,
+  title={A Dataset for Tracking Entities in Open Domain Procedural Text},
+  author={Tandon, Niket and Sakaguchi, Keisuke and Mishra, Bhavana Dalvi and Rajagopal, Dheeraj and Clark, Peter and Guerquin, Michal and Richardson, Kyle and Hovy, Eduard},
+  booktitle={EMNLP},
+  year={2020}
+}
+
+@inproceedings{vashishtha2020temporal,
+  title={{Temporal Reasoning in Natural Language Inference}},
+  author={Vashishtha, Siddharth and Poliak, Adam and Lal, Yash Kumar and Van Durme, Benjamin and White, Aaron Steven},
+  booktitle={Finding of EMNLP},
+  year={2020}
+}
+
+@article{poliak2018hypothesis,
+  title={{Hypothesis only Baselines in Natural Language Inference}},
+  author={Poliak, Adam and Naradowsky, Jason and Haldar, Aparajita and Rudinger, Rachel and Van Durme, Benjamin},
+  journal={Proceedings of *SEM},
+  year={2018}
+}
+
+@article{williams2017broad,
+  title={A Broad-coverage Challenge Corpus for Sentence Understanding through Inference},
+  author={Williams, Adina and Nangia, Nikita and Bowman, Samuel R},
+  journal={In NAACL},
+  year={2017}
+}
+
+@article{nie2019adversarial,
+  title={{Adversarial NLI: A New Benchmark for Natural Language Understanding}},
+  author={Nie, Yixin and Williams, Adina and Dinan, Emily and Bansal, Mohit and Weston, Jason and Kiela, Douwe},
+  journal={In ACL},
+  year={2020}
+}
+
+@article{gururangan2018annotation,
+  title={Annotation {A}rtifacts in {N}atural {L}anguage {I}nference {D}ata},
+  author={Gururangan, Suchin and Swayamdipta, Swabha and Levy, Omer and Schwartz, Roy and Bowman, Samuel R and Smith, Noah A},
+  journal={arXiv preprint arXiv:1803.02324},
+  year={2018}
+}
+
+@inproceedings{vashishtha2019fine,
+  title={Fine-grained {T}emporal {R}elation {E}xtraction},
+  author={Vashishtha, Siddharth and Van Durme, Benjamin and White, Aaron Steven},
+  booktitle={ACL},
+  year={2019},
+}
+
+@inproceedings{zhou2019going,
+  title={"Going on a vacation" takes longer than "Going for a walk": A Study of Temporal Commonsense Understanding},
+  author={Ben Zhou and Daniel Khashabi and Qiang Ning and D. Roth},
+  booktitle={EMNLP},
+  year={2019}
+}
+
+
+@inproceedings{li2019logic,
+  title={A Logic-Driven Framework for Consistency of Neural Models},
+  author={Tao Li and Vivek Gupta and Maitrey Mehta and V. Srikumar},
+  booktitle={EMNLP},
+  year={2019}
+}
+
+@inproceedings{khot2020text,
+  title={{Text Modular Networks: Learning to Decompose Tasks in the Language of Existing Models}},
+  author={Khot, Tushar and Khashabi, Daniel and Richardson, Kyle and Clark, Peter and Sabharwal, Ashish},
+  booktitle={NAACL},
+  year={2021},
+}
+
+@article{lai2017natural,
+  title={{Natural Language Inference from Multiple Premises}},
+  author={Lai, Alice and Bisk, Yonatan and Hockenmaier, Julia},
+  journal={IJCNLP},
+  year={2017},
+}
+
+@article{ling2010temporal,
+  title={{Temporal Information Extraction.}},
+  author={Ling, Xiao and Weld, Daniel S},
+  journal={Proceedings of AAAI},
+  year={2010},
+}
+
+@inproceedings{do2012joint,
+  title={Joint {I}nference for {E}vent {T}imeline {C}onstruction},
+  author={Do, Quang and Lu, Wei and Roth, Dan},
+  booktitle={Proceedings of EMNLP},
+  pages={677--687},
+  year={2012}
+}
+
+@article{allen1983maintaining,
+  title={Maintaining knowledge about temporal intervals},
+  author={Allen, James F},
+  journal={Communications of the ACM},
+  volume={26},
+  number={11},
+  pages={832--843},
+  year={1983},
+  publisher={ACM New York, NY, USA},
+}
+
+@inproceedings{andrew2007scalable,
+  title={Scalable training of {L1}-regularized log-linear models},
+  author={Andrew, Galen and Gao, Jianfeng},
+  booktitle={Proceedings of the 24th International Conference on Machine Learning},
+  pages={33--40},
+  year={2007}
+}
+
+@inproceedings{gusev2011using,
+  title={{Using Query Patterns to Learn the Duration of Events}},
+  author={Gusev, Andrey and Chambers, Nathanael and Khilnani, Divye Raj and Khaitan, Pranav and Bethard, Steven and Jurafsky, Dan},
+  booktitle={IWCS},
+  year={2011},
+}
+
+@book{Gusfield:97,
+    author  = {Dan Gusfield},
+    title   = {Algorithms on Strings, Trees and Sequences},
+    year    = "1997",
+    publisher = {Cambridge University Press},
+    address = {Cambridge, UK}
+}
+
+@article{rasooli-tetrault-2015,
+    author    = {Mohammad Sadegh Rasooli and Joel R. Tetreault},
+    title     = {Yara Parser: {A} Fast and Accurate Dependency Parser},
+    journal   = {Computing Research Repository},
+    volume    = {arXiv:1503.06733},
+    year      = {2015},
+    url       = {http://arxiv.org/abs/1503.06733},
+    note    = {version 2}
+}
+
+@article{Ando2005,
+	Acmid = {1194905},
+	Author = {Ando, Rie Kubota and Zhang, Tong},
+	Issn = {1532-4435},
+	Issue_Date = {12/1/2005},
+	Journal = {Journal of Machine Learning Research},
+	Month = dec,
+	Numpages = {37},
+	Pages = {1817--1853},
+	Publisher = {JMLR.org},
+	Title = {A Framework for Learning Predictive Structures from Multiple Tasks and Unlabeled Data},
+	Volume = {6},
+	Year = {2005}}
+	
+@article{bowman2015large,
+  title={{A Large Annotated Corpus for Learning Natural Language Inference}},
+  author={Bowman, Samuel R and Angeli, Gabor and Potts, Christopher and Manning, Christopher D},
+  journal={EMNLP},
+  year={2015},
+}
+
+@article{Liu2019RoBERTaAR,
+  title={{RoBERTa: A Robustly Optimized BERT Pretraining Approach}},
+  author={Liu, Yinhan and Ott, Myle and Goyal, Naman and Du, Jingfei and Joshi, Mandar and Chen, Danqi and Levy, Omer and Lewis, Mike and Zettlemoyer, Luke and Stoyanov, Veselin},
+  journal={ArXiv},
+  year={2019},
+  volume={abs/1907.11692},
+}
+
+@article{talmor2018web,
+  title={{The Web as a Knowledge-base for Answering Complex Questions}},
+  author={Talmor, Alon and Berant, Jonathan},
+  journal={In NAACL},
+  year={2018}
+}
+
+@article{gupta2019neural,
+  title={{Neural Module Networks for Reasoning over Text}},
+  author={Gupta, Nitish and Lin, Kevin and Roth, Dan and Singh, Sameer and Gardner, Matt},
+  journal={In ICLR},
+  year={2019}
+}
+
+@article{wolfson2020break,
+  title={{Break it Down: A Question Understanding Benchmark}},
+  author={Wolfson, Tomer and Geva, Mor and Gupta, Ankit and Gardner, Matt and Goldberg, Yoav and Deutch, Daniel and Berant, Jonathan},
+  journal={TACL},
+  volume={8},
+  pages={183--198},
+  year={2020},
+}
+
+@inproceedings{zhou-etal-2020-temporal,
+    title = "{Temporal Common Sense Acquisition with Minimal Supervision}",
+    author = "Zhou, Ben  and
+      Ning, Qiang  and
+      Khashabi, Daniel  and
+      Roth, Dan",
+    booktitle = "ACL",
+    year = "2020",
+}
+
+@inproceedings{WCZR20,
+  title={Joint Constrained Learning for Event-Event Relation Extraction},
+  author={Wang, Haoyu and Chen, Muhao and Zhang, Hongming and Roth, Dan},
+  booktitle={EMNLP},
+  year={2020}
+}
+
+@inproceedings{Gardner2020EvaluatingNM,
+  title={{Evaluating Models' Local Decision Boundaries via Contrast Sets}},
+  author={Matt Gardner and Yoav Artzi and Victoria Basmova and Jonathan Berant and Ben Bogin and Sihao Chen and Pradeep Dasigi and Dheeru Dua and Yanai Elazar and Ananth Gottumukkala and Nitish Gupta and Hanna Hajishirzi and Gabriel Ilharco and Daniel Khashabi and Kevin Lin and Jiangming Liu and Nelson F. Liu and Phoebe Mulcaire and Qiang Ning and Sameer Singh and Noah A. Smith and Sanjay Subramanian and R. Tsarfaty and Eric Wallace and A. Zhang and Ben Zhou},
+  booktitle={Findings of EMNLP},
+  year={2020},
+}
+
+@inproceedings{Qiang20Crowdaq,
+  title={{Easy, Reproducible and Quality-Controlled Data Collection with CROWDAQ}},
+  author={Qiang Ning and Hao Wu and Pradeep Dasigi and Dheeru Dua and Matt Gardner and Robert L. Logan IV and Zhen Nie},
+  booktitle={EMNLP},
+  year={2020},
+}
+
+@article{Gardner2018AllenNLPAD,
+  title={{AllenNLP: A Deep Semantic Natural Language Processing Platform}},
+  author={Matt Gardner and Joel Grus and Mark Neumann and Oyvind Tafjord and Pradeep Dasigi and Nelson F. Liu and Matthew E. Peters and M. Schmitz and L. Zettlemoyer},
+  journal={NLP-OSS},
+  year={2018},
+  volume={abs/1803.07640},
+}
+
+@InProceedings{lahiri:2014:SRW,
+  author    = {Lahiri, Shibamouli},
+  title     = {{Complexity of Word Collocation Networks: A Preliminary Structural Analysis}},
+  booktitle = {Proceedings of ACL-SRW},
+  year      = {2014},
+}
+
+@inproceedings{ZNKR20,
+    author = {Ben Zhou and Qiang Ning and Daniel Khashabi and Dan Roth},
+    title = {{Temporal Common Sense Acquisition with Minimal Supervision}},
+    booktitle = {ACL},
+    year = {2020},
+}
+
+@inproceedings{Pustejovsky2003TimeMLRS,
+  title={{TimeM: Robust Specification of Event and Temporal Expressions in Text}},
+  author={Pustejovsky, James and Castano, Jos{\'e} M and Ingria, Robert and Sauri, Roser and Gaizauskas, Robert J and Setzer, Andrea and Katz, Graham and Radev, Dragomir R},
+  booktitle={New Directions in Question Answering},
+  year={2003}
+}
+
+@article{Bethard2007TimelinesFT,
+  title={{Timelines from Text: Identification of Syntactic Temporal Relations}},
+  author={Steven Bethard and James H. Martin and Sara Klingenstein},
+  journal={ICSC},
+  year={2007},
+}
+
+@inproceedings{Cassidy2014AnAF,
+  title={{An Annotation Framework for Dense Event Ordering}},
+  author={Cassidy, Taylor and McDowell, Bill and Chambers, Nathanel and Bethard, Steven},
+  booktitle={ACL},
+  year={2014},
+}
+
+@inproceedings{Pan2006ExtendingTW,
+  title={{Extending TimeML with Typical Durations of Events}},
+  author={Pan, Feng and Mulkar-Mehta, Rutu and Hobbs, Jerry R},
+  booktitle={Proceedings of the Workshop on Annotating and Reasoning about Time and Events},
+  year={2006},
+}
+
+@inproceedings{Ning2018CogCompTimeAT,
+  title={{CogCompTime: A Tool for Understanding Time in Natural Language}},
+  author={Qiang Ning and Ben Zhou and Z. Feng and H. Peng and D. Roth},
+  booktitle={EMNLP},
+  year={2018},
+}
+
+@inproceedings{Han2019JointEA,
+  title={{Joint Event and Temporal Relation Extraction with Shared Representations and Structured Prediction}},
+  author={Rujun Han and Qiang Ning and Nanyun Peng},
+  booktitle={EMNLP},
+  year={2019},
+}
+
+@inproceedings{Do2012JointIF,
+  title={{Joint Inference for Event Timeline Construction}},
+  author={Quang Do and Wei Lu and D. Roth},
+  booktitle={EMNLP-CoNLL},
+  year={2012},
+}
+
+@article{Roth2017IncidentalSM,
+  title={Incidental Supervision: Moving beyond Supervised Learning},
+  author={D. Roth},
+  journal={ArXiv},
+  year={2017},
+}
+
+@inproceedings{Ning2018ImprovingTR,
+  title={{Improving Temporal Relation Extraction with a Globally Acquired Statistical Resource}},
+  author={Qiang Ning and H. Wu and H. Peng and D. Roth},
+  booktitle={NAACL},
+  year={2018},
+}
+
+@inproceedings{Ning2017ASL,
+  title={{A Structured Learning Approach to Temporal Relation Extraction}},
+  author={Qiang Ning and Z. Feng and D. Roth},
+  booktitle={EMNLP},
+  year={2017},
+}
+
+@article{Andreas2016NeuralMN,
+  title={Neural Module Networks},
+  author={Jacob Andreas and Marcus Rohrbach and Trevor Darrell and D. Klein},
+  journal={CVPR},
+  year={2016},
+}
+
+@inproceedings{Ning2020TORQUEAR,
+  title={TORQUE: A Reading Comprehension Dataset of Temporal Ordering Questions},
+  author={Qiang Ning and Hao Wu and Rujun Han and Nanyun Peng and Matt Gardner and Dan Roth},
+  booktitle={EMNLP},
+  year={2020},
+}
+
+@inproceedings{ogorman-etal-2016-richer,
+    title = "Richer Event Description: Integrating event coreference with temporal, causal and bridging annotation",
+    author = "O{'}Gorman, Tim  and
+      Wright-Bettner, Kristin  and
+      Palmer, Martha",
+    booktitle = "CNS",
+    year = "2016",
+}
+
+@inproceedings{Moens2017StructuredLF,
+  title={Structured Learning for Temporal Relation Extraction from Clinical Records},
+  author={Marie-Francine Moens and A. Leeuwenberg},
+  booktitle={EACL},
+  year={2017}
+}
+
+@inproceedings{Leeuwenberg2018TemporalIE,
+  title={Temporal Information Extraction by Predicting Relative Time-lines},
+  author={A. Leeuwenberg and Marie-Francine Moens},
+  booktitle={EMNLP},
+  year={2018},
+}
+
+@inproceedings{Meng2018ContextAwareNM,
+  title={Context-Aware Neural Model for Temporal Information Extraction},
+  author={Yuanliang Meng and Anna Rumshisky},
+  booktitle={ACL},
+  year={2018}
+}
+
+@article{wolf2019transformers,
+  title={Transformers: State-of-the-art natural language processing},
+  author={Wolf, Thomas and Debut, Lysandre and Sanh, Victor and Chaumond, Julien and Delangue, Clement and Moi, Anthony and Cistac, Pierric and Rault, Tim and Louf, R{\'e}mi and Funtowicz, Morgan and others},
+  journal={arXiv preprint arXiv:1910.03771},
+  year={2019}
+}
+
+@article{Zhao2020EffectiveDS,
+  title={Effective Distant Supervision for Temporal Relation Extraction},
+  author={Xinyu Zhao and Shih-ting Lin and Greg Durrett},
+  journal={ArXiv},
+  year={2020},
+  volume={abs/2010.12755}
+}
+
+@article{Pearl2009CausalII,
+  title={Causal inference in statistics: An overview},
+  author={J. Pearl},
+  journal={Statistics Surveys},
+  year={2009},
+  volume={3},
+  pages={96-146}
+}
+
+@article{Tandon2018ReasoningAA,
+  title={Reasoning about Actions and State Changes by Injecting Commonsense Knowledge},
+  author={Niket Tandon and Bhavana Dalvi and Joel Grus and Wen-tau Yih and Antoine Bosselut and Peter Clark},
+  journal={ArXiv},
+  year={2018},
+  volume={abs/1808.10012}
+}
+
+@inproceedings{ding_hashtags_2020,
+	address = {Online},
+	title = {Hashtags, {Emotions}, and {Comments}: {A} {Large}-{Scale} {Dataset} to {Understand} {Fine}-{Grained} {Social} {Emotions} to {Online} {Topics}},
+	shorttitle = {Hashtags, {Emotions}, and {Comments}},
+	url = {https://aclanthology.org/2020.emnlp-main.106},
+	doi = {10.18653/v1/2020.emnlp-main.106},
+	abstract = {This paper studies social emotions to online discussion topics. While most prior work focus on emotions from writers, we investigate readers' responses and explore the public feelings to an online topic. A large-scale dataset is collected from Chinese microblog Sina Weibo with over 13 thousand trending topics, emotion votes in 24 fine-grained types from massive participants, and user comments to allow context understanding. In experiments, we examine baseline performance to predict a topic's possible social emotions in a multilabel classification setting. The results show that a seq2seq model with user comment modeling performs the best, even surpassing human prediction. More analyses shed light on the effects of emotion types, topic description lengths, contexts from user comments, and the limited capacity of the existing models.},
+	urldate = {2021-08-03},
+	booktitle = {Proceedings of the 2020 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing} ({EMNLP})},
+	publisher = {Association for Computational Linguistics},
+	author = {Ding, Keyang and Li, Jing and Zhang, Yuji},
+	month = nov,
+	year = {2020},
+	keywords = {Read, \$Weibo, \_Emotion Classification},
+	pages = {1376--1382},
+	file = {Ding et al_2020_Hashtags, Emotions, and Comments.pdf:/home/shen/Nutstore Files/Zotero/Twitter Works/Ding et al_2020_Hashtags, Emotions, and Comments.pdf:application/pdf},
 }
